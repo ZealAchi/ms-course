@@ -5,6 +5,7 @@ spring:
     name: hr-payroll
   main:
     allow-bean-definition-overriding: true
-hr-worker:
-  ribbon:
-    listOfServers: localhost:8001,localhost:8002
+eureka:
+  client:
+    service-url:  
+      defaultZone: http://127.0.0.1:8761/eureka
