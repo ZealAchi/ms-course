@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: hr-eureka-server  main:    allow-bean-definition-overriding: true
+server:
+  port: 8761
+eureka:  client:
+    register-with-eureka: false    fetch-registry: false
