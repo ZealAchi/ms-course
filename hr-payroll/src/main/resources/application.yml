@@ -3,5 +3,7 @@ server:
 spring:
   application:
     name: hr-worker
+  main:
+    allow-bean-definition-overriding: true
 hr-worker:
   host: http://localhost:8001
