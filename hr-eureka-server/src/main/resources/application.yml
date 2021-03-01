@@ -1,7 +1,12 @@
+server:
+  port: 8761
 spring:
   application:
     name: hr-eureka-server  main:    allow-bean-definition-overriding: true
-server:
-  port: 8761
-eureka:  client:
-    register-with-eureka: false    fetch-registry: false
+    
+eureka:
+  client:
+    fetch-registry: false 
+    register-with-eureka: false 
+    service-url:  
+      defaultZone: http://127.0.0.1:${server.port}/eureka
