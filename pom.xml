@@ -45,6 +45,7 @@
 		<module>hr-worker</module>
 		<module>hr-payroll</module>
 		<module>hr-eureka-server</module>
+		<module>hr-api-gateway-zuul</module>
 	</modules>
 
 
@@ -93,7 +94,8 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.M9</version>
+                <version>Greenwich.RC1</version>
+<!--                 <version>Finchley.M9</version> -->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
